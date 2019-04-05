@@ -10,7 +10,7 @@ package ec.edu.ups.clases;
  *
  * @author Usuario
  */
-public class Profesor {
+public class Profesor extends Persona{
     
     
     private String titulo;
