@@ -21,6 +21,19 @@ public class Carrera {
     private int numeroEstudiantes;
     private String titulo;
 
+    public Carrera() {
+    }
+
+    public Carrera(int codigo, String nombre, int numeroSemestres, int numeroEstudiantes, String titulo) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.numeroSemestres = numeroSemestres;
+        this.numeroEstudiantes = numeroEstudiantes;
+        this.titulo = titulo;
+    }
+    
+    
+
     public int getCodigo() {
         return codigo;
     }

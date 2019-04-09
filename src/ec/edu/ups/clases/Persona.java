@@ -18,8 +18,30 @@ public class Persona {
     private String telefono;
     private String direccion;
     private String correo;
-    private Sede sede;
+    
+    public  Persona() {
+    
+    }
+    
+    public Persona(int codigo){
+        this.codigo = codigo;
+    }
 
+    public Persona(int codigo, String nombre,String cedula) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.cedula = cedula;
+    }
+
+    public Persona(int codigo, String nombre, String cedula, String telefono, String direccion, String correo) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.cedula = cedula;
+        this.telefono = telefono;
+        this.direccion = direccion;
+        this.correo = correo;
+    }
+    
     public int getCodigo() {
         return codigo;
     }
@@ -68,17 +90,11 @@ public class Persona {
         this.correo = correo;
     }
 
-    public Sede getSede() {
-        return sede;
-    }
-
-    public void setSede(Sede sede) {
-        this.sede = sede;
-    }
+ 
 
     @Override
     public String toString() {
-        return "Persona{" + "codigo=" + codigo + ", nombre=" + nombre + ", cedula=" + cedula + ", telefono=" + telefono + ", direccion=" + direccion + ", correo=" + correo + ", sede=" + sede + '}';
+        return "Persona{" + "codigo=" + codigo + ", nombre=" + nombre + ", cedula=" + cedula + ", telefono=" + telefono + ", direccion=" + direccion + ", correo=" + correo ;
     }
           
     
